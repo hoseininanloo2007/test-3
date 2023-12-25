@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f0f0f0;
+}
+
+.login-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 400px;
+  width: 100%;
+}
+
+.logo {
+  color: #008000;
+}
+
+.input-container {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 10px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.green-button {
+  background-color: #008000;
+  color: #fff;
+}
+
+.black-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.full-green-button {
+  background-color: #008000;
+  color: #fff;
+}
+
+#login-form {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+/* افکت‌های جدید */
+.effect {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.effect:hover {
+  background-color: #45a049;
+}
+
+@keyframes shake {
+  0%, 100% {
+      transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+      transform: translateX(10px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 2s infinite linear;
+}
+
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}

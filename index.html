@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="logo">Sign Up</h1>
+        <form id="login-form">
+            <div class="input-container">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" class="black-border" required>
+            </div>
+
+            <div class="input-container">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" class="black-border" required>
+            </div>
+
+            <button type="button" class="green-button">Sign Up</button>
+            <button type="button" class="black-button">Forgot Password</button>
+
+            <button type="button" class="full-green-button" onclick="login()">Log In</button>
+        </form>
+    </div>
+
+    <div id="effects-container">
+        <div class="effect" onclick="shakeElement('login-form')">Shake Form</div>
+        <div class="effect" onclick="changeBackgroundColor()">Change Background Color</div>
+        <div class="effect" onclick="fadeInOut('login-form')">Fade In/Out</div>
+        <div class="effect" onclick="rotateElement('login-form')">Rotate Form</div>
+        <div class="effect" onclick="pulseElement('login-form')">Pulse Form</div>
+        <div class="effect" onclick="slideInElement('login-form')">Slide In Form</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
